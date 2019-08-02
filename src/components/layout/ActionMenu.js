@@ -9,7 +9,8 @@ const StyledActionMenu = styled.div`
     img {
         height: 30px;
         width: 30px;
-        padding-right: 12px;
+        margin-right: 12px;
+        border-radius: 5px;
     }
 `
 

@@ -1,16 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Routes from './Routes'
 
-const RouterContainer = () => {
+const RouterContainer = props => {
     return (
-        <BrowserRouter>
+        <Router>
             <Switch>
                 {Routes.map(({ path, component }, i) => (
-                    <Route exact key={i} path={path} component={component} />
+                    <Route exact={true} key={i} path={path} component={component} />
                 ))}
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 }
 

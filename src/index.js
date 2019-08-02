@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
 
-import Card from './components/Card'
 import RouterContainer from './RouterContainer'
+
+import './sass/app.scss'
 
 const theme = {
     headerHeight: '60px',
@@ -18,6 +19,5 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
         <RouterContainer />
     </ThemeProvider>,
-
     document.getElementById('root')
 )
